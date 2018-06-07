@@ -15,10 +15,10 @@ podTemplate(label: 'deploypod', containers:
         {
             container('helm')
             {
-                sh "helm init --client-only"
-                sh "helm repo add spring-repo https://eli-skaronea.github.io/helm-charts/"
-                sh "helm repo update"
-                sh "helm upgrade --install spring https://eli-skaronea.github.io/helm-charts/spring-chart-1.1-latest.tgz"
+                sh """helm init --client-only
+                 helm repo add spring-repo https://eli-skaronea.github.io/helm-charts/
+                 helm repo update
+                 helm upgrade --install spring https://eli-skaronea.github.io/helm-charts/spring-chart-1.1-latest.tgz"""
             }
         } 
     }
