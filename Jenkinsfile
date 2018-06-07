@@ -13,6 +13,8 @@ podTemplate(label: 'deploypod', containers:
     {
         stage('Deploy helm') 
         {
+            sh "ls"
+            copyArtifacts(projectName: 'Build-Pipeline');
             container('helm')
             {
                 sh """helm init --client-only
