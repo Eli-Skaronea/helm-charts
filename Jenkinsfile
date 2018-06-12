@@ -19,8 +19,12 @@ podTemplate(label: 'deploypod', containers:
 
         stage('Deploy helm') 
         {
-            
+            def buildNumber = Jenkins.instance.getItem('Build-Pipeline').lastSuccessfulBuild.number
             copyArtifacts(projectName: 'Build-Pipeline');
+            sh "cp helm-charts/docs/index.yaml docs"
+            sh "cp helm-charts/docs/spring-chart-1.0-" + buildNumber + ".tgz docs"
+            sh "cp helm-charts/docs/spring-chart-1.0-latest.tgz docs"
+            
             container('helm')
             {
                 sh """helm init --client-only
@@ -34,9 +38,11 @@ podTemplate(label: 'deploypod', containers:
                 sh """git config user.name 'eli-skaronea'
                 git config user.email 'eli.skaronea@gmail.com'
                 git add docs
-                git commit -m 'Jenkins pushed spring-chart-1.0-X and latest'
-                git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/eli-skaronea/helm-charts.git HEAD:master
                 """
+                def commitMessage = "'Jenkins pushed spring-chart-1.0-" + buildNumber + " and latest'"
+                sh "git commit -m " + commitMessage
+                sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/eli-skaronea/helm-charts.git HEAD:master"
+                
             }
         } 
     }
