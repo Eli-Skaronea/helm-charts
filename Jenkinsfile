@@ -31,11 +31,12 @@ podTemplate(label: 'deploypod', containers:
             }
             withCredentials([usernamePassword(credentialsId: 'git-credentials', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) 
             {
-                sh "git config user.name 'eli-skaronea'"
-                sh "git config user.email 'eli.skaronea@gmail.com'"
-                sh 'git add helm-charts'
-                sh "git commit -m 'Jenkins pushed a new helm package'"
-                sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/eli-skaronea/helm-charts.git HEAD:master"
+                sh """git config user.name 'eli-skaronea'
+                git config user.email 'eli.skaronea@gmail.com'
+                git add helm-charts/docs
+                git commit -m 'Jenkins pushed spring-chart-v1.-${env.BUILD_NUMBER} and latest'
+                git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/eli-skaronea/helm-charts.git HEAD:master
+                """
             }
         } 
     }
