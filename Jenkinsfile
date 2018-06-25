@@ -28,10 +28,7 @@ podTemplate(label: 'deploypod', containers:
             container('helm')
             {
                 sh """helm init --client-only
-                 helm repo add spring-repo https://eli-skaronea.github.io/helm-charts/
-                 helm repo update
-                 helm upgrade --install spring https://eli-skaronea.github.io/helm-charts/spring-chart-1.0-10.tgz"""
-
+                 helm upgrade --install spring spring-chart-1.0-latest.tgz"""
             }
             withCredentials([usernamePassword(credentialsId: 'git-credentials', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) 
             {
