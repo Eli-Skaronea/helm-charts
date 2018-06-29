@@ -22,14 +22,14 @@ podTemplate(label: 'deploypod', containers:
             def buildNumber = Jenkins.instance.getItem('Build-Consumer').lastSuccessfulBuild.number
             copyArtifacts(projectName: 'Build-Consumer');
             sh "cp helm-charts/docs/index.yaml docs"
-            sh "cp helm-charts/docs/spring-chart-1.0-" + buildNumber + ".tgz docs"
-            sh "cp helm-charts/docs/spring-chart-1.0-latest.tgz docs"
+            sh "cp helm-charts/docs/spring-consumer-1.0-" + buildNumber + ".tgz docs"
+            sh "cp helm-charts/docs/spring-consumer-1.0-latest.tgz docs"
             
             container('helm')
             {
                 sh """
                 helm init --client-only
-                helm upgrade --install spring-consumer docs/spring-chart-1.0-latest.tgz
+                helm upgrade --install spring-consumer docs/spring-consumer-1.0-latest.tgz
                 """
             }
             withCredentials([usernamePassword(credentialsId: 'git-credentials', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) 
@@ -38,7 +38,7 @@ podTemplate(label: 'deploypod', containers:
                 git config user.email 'eli.skaronea@gmail.com'
                 git add docs
                 """
-                def commitMessage = "'Jenkins pushed spring-chart-1.0-" + buildNumber + " and latest'"
+                def commitMessage = "'Jenkins pushed spring-consumer-1.0-" + buildNumber + " and latest'"
                 sh "git commit -m " + commitMessage
                 sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/eli-skaronea/helm-charts.git HEAD:master"
                 
