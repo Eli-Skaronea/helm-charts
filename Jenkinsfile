@@ -19,8 +19,8 @@ podTemplate(label: 'deploypod', containers:
 
         stage('Deploy helm') 
         {
-            def buildNumber = Jenkins.instance.getItem('Build-Pipeline').lastSuccessfulBuild.number
-            copyArtifacts(projectName: 'Build-Pipeline');
+            def buildNumber = Jenkins.instance.getItem('Build-Consumer').lastSuccessfulBuild.number
+            copyArtifacts(projectName: 'Build-Consumer');
             sh "cp helm-charts/docs/index.yaml docs"
             sh "cp helm-charts/docs/spring-chart-1.0-" + buildNumber + ".tgz docs"
             sh "cp helm-charts/docs/spring-chart-1.0-latest.tgz docs"
