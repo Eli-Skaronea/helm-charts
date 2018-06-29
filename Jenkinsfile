@@ -29,7 +29,7 @@ podTemplate(label: 'deploypod', containers:
             {
                 sh """
                 helm init --client-only
-                helm upgrade --install spring docs/spring-chart-1.0-latest.tgz
+                helm upgrade --install spring-consumer docs/spring-chart-1.0-latest.tgz
                 """
             }
             withCredentials([usernamePassword(credentialsId: 'git-credentials', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) 
