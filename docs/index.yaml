@@ -3,16 +3,16 @@ entries:
   spring-chart:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-06-25T17:47:00.706894677Z
+    created: 2018-06-29T14:37:57.723645342Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint
-    digest: 527120f8c2cc63d2a0b197f4174f235cae077b8e5789d43f15d907fc4eb34923
+    digest: 5852b384390c9fe1d87dc6ed70e0d3b7274cef3e5c5ad67df58d288baeb97fa2
     name: spring-chart
     urls:
     - https://eli-skaronea.github.io/helm-charts/spring-chart-1.0-latest.tgz
     version: 1.0-latest
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-06-25T17:47:00.706096195Z
+    created: 2018-06-29T14:37:57.723071887Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint
     digest: 6d822769333678d4f199fb487e33d27a9607736aa80b50964119c413f8db3847
     name: spring-chart
@@ -21,7 +21,7 @@ entries:
     version: 1.0-37
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-06-25T17:47:00.705828168Z
+    created: 2018-06-29T14:37:57.72288491Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint
     digest: 37d371452548222e49fb63869fc9d3f32f3f29c7da13ea0c0b43e8854dfab7d8
     name: spring-chart
@@ -30,7 +30,7 @@ entries:
     version: 1.0-36
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-06-25T17:47:00.705597941Z
+    created: 2018-06-29T14:37:57.722721632Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint
     digest: 28d35e32d973a7483a369f84e9df92772ee0822983632cd04164d2b59dd8e4ab
     name: spring-chart
@@ -39,7 +39,7 @@ entries:
     version: 1.0-34
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-06-25T17:47:00.705138636Z
+    created: 2018-06-29T14:37:57.722558926Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint
     digest: d3153bc4eca7f8d3500d037ee02cfdc39ed96ba924d2e28d6b47c4746e698869
     name: spring-chart
@@ -48,7 +48,7 @@ entries:
     version: 1.0-32
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-06-25T17:47:00.704962523Z
+    created: 2018-06-29T14:37:57.722362796Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint
     digest: 9c230aa7407e9e2552a77a9ccd72c7cfd4dc397d14f94a4aed7c5ef18d944fd3
     name: spring-chart
@@ -57,7 +57,16 @@ entries:
     version: 1.0-30
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-06-25T17:47:00.704777086Z
+    created: 2018-06-29T14:37:57.722153921Z
+    description: A Helm chart for Kubernetes - creates a simple REST endpoint
+    digest: eb9c1ed47f9987ae70089380fb53c3a8546774e14a516b6deebd885f2bfc058d
+    name: spring-chart
+    urls:
+    - https://eli-skaronea.github.io/helm-charts/spring-chart-1.0-18.tgz
+    version: 1.0-18
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-06-29T14:37:57.721967877Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint
     digest: fa93153e9ff5e1b482ea6887167411eb78e9354f357d6587942a3c01c05c73d0
     name: spring-chart
@@ -66,7 +75,7 @@ entries:
     version: 1.0-17
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-06-25T17:47:00.704243634Z
+    created: 2018-06-29T14:37:57.721768629Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint
     digest: 5e7ccb206e1692c1dd579114493c34d864c92ba8b589d43cb2de1aa0b5f1ea12
     name: spring-chart
@@ -75,7 +84,7 @@ entries:
     version: 1.0-16
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-06-25T17:47:00.704038406Z
+    created: 2018-06-29T14:37:57.721531779Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint
     digest: 263876f4b96f10909f9d7794de8525fb182b65487af5b75e42eadd264999a6ff
     name: spring-chart
@@ -84,7 +93,7 @@ entries:
     version: 1.0-11
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-06-25T17:47:00.703857133Z
+    created: 2018-06-29T14:37:57.721253958Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint
     digest: 20bcbe94fedd75542b5dd5a241fb21af3dd7aded35d16f0309ae72ca92a1a0c0
     name: spring-chart
@@ -93,7 +102,7 @@ entries:
     version: 1.0-10
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-06-25T17:47:00.706709717Z
+    created: 2018-06-29T14:37:57.723406794Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint
     digest: baa8d6d504ab29806759b32ba3d87a0bb72001e045d4bda3119cbd6ecc14878d
     name: spring-chart
@@ -102,11 +111,11 @@ entries:
     version: 1.0-9
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-06-25T17:47:00.706269678Z
+    created: 2018-06-29T14:37:57.723233953Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint
     digest: 1123f535e0428455a778ca2be300214f48a3f5f823f7dacbee5d2753b39a1960
     name: spring-chart
     urls:
     - https://eli-skaronea.github.io/helm-charts/spring-chart-1.0-8.tgz
     version: 1.0-8
-generated: 2018-06-25T17:47:00.703560207Z
+generated: 2018-06-29T14:37:57.717607816Z
