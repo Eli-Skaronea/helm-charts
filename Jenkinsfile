@@ -23,9 +23,9 @@ podTemplate(label: 'deploypod', containers:
             container('helm')
             {
                 sh "helm init --client-only"
-                
+
                 echo 'Linting helm package...'
-                sh "helm lint helm-charts/spring-app/"
+                sh "helm lint spring-app/"
 
                 sh """
                    helm package spring-app/ --version 1.0-${env.BUILD_NUMBER} -d docs/
