@@ -24,9 +24,9 @@ podTemplate(label: 'deploypod', containers:
             {
                 sh "helm init --client-only"
                 sh """
-                   helm package spring-consumer/ --version 1.0-${env.BUILD_NUMBER} -d helm-charts/docs/
-                   helm package spring-consumer/ --version 1.0-latest -d helm-charts/docs/
-                   helm repo index helm-charts/docs --url https://eli-skaronea.github.io/helm-charts/
+                   helm package spring-app/ --version 1.0-${env.BUILD_NUMBER} -d docs/
+                   helm package spring-app/ --version 1.0-latest -d docs/
+                   helm repo index docs/ --url https://eli-skaronea.github.io/helm-charts/
                   """ 
             }
             withCredentials([usernamePassword(credentialsId: 'git-credentials', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) 
@@ -35,7 +35,7 @@ podTemplate(label: 'deploypod', containers:
                 git config user.email 'eli.skaronea@gmail.com'
                 git add docs
                 """
-                def commitMessage = "'Jenkins pushed spring-consumer-1.0-${env.BUILD_NUMBER} and latest'"
+                def commitMessage = "'Jenkins pushed spring-app-1.0-${env.BUILD_NUMBER} and latest'"
                 sh "git commit -m " + commitMessage
                 sh "git push https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/eli-skaronea/helm-charts.git HEAD:master"
                 
