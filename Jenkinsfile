@@ -24,8 +24,8 @@ podTemplate(label: 'deploypod', containers:
             {
                 sh "helm init --client-only"
                 sh """
-                   helm package spring-consumer/ --version 1.0-${env.BUILD_NUMBER} -d helm-charts/docs/
-                   helm package spring-consumer/ --version 1.0-latest -d helm-charts/docs/
+                   helm package spring-app/ --version 1.0-${env.BUILD_NUMBER} -d helm-charts/docs/
+                   helm package spring-app/ --version 1.0-latest -d helm-charts/docs/
                    helm repo index helm-charts/docs --url https://eli-skaronea.github.io/helm-charts/
                   """ 
             }
