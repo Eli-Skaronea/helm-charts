@@ -17,20 +17,17 @@ podTemplate(label: 'deploypod', containers:
             checkout scm
         }
 
-        stage('Deploy helm') 
+        stage('Build new helm package') 
         {
-            def buildNumber = Jenkins.instance.getItem('Build-Consumer').lastSuccessfulBuild.number
-            copyArtifacts(projectName: 'Build-Consumer');
-            sh "cp helm-charts/docs/index.yaml docs"
-            sh "cp helm-charts/docs/spring-consumer-1.0-" + buildNumber + ".tgz docs"
-            sh "cp helm-charts/docs/spring-consumer-1.0-latest.tgz docs"
             
             container('helm')
             {
+                sh "helm init --client-only"
                 sh """
-                helm init --client-only
-                helm upgrade --install spring-consumer docs/spring-consumer-1.0-latest.tgz
-                """
+                   helm package spring-consumer/ --version 1.0-${env.BUILD_NUMBER} -d helm-charts/docs/
+                   helm package spring-consumer/ --version 1.0-latest -d helm-charts/docs/
+                   helm repo index helm-charts/docs --url https://eli-skaronea.github.io/helm-charts/
+                  """ 
             }
             withCredentials([usernamePassword(credentialsId: 'git-credentials', passwordVariable: 'GIT_PASSWORD', usernameVariable: 'GIT_USERNAME')]) 
             {
