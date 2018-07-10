@@ -5,7 +5,7 @@ metadata:
 spec:
   ports:
     - port: {{ .Values.service.port }}
-      targetPort: 9080
+      targetPort: 8080
   selector:
     app: {{ template "spring-chart.name" . }}
   type: LoadBalancer
