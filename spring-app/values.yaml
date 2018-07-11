@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: eskaronea/spring_consumer
   tag: latest
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 service:
   type: ClusterIP

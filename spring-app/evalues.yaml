@@ -7,7 +7,7 @@ replicaCount: 1
 image:
   repository: eskaronea/elastic-greeting-endpoint
   tag: latest
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 service:
   type: ClusterIP
