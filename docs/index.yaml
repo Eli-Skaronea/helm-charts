@@ -3,17 +3,27 @@ entries:
   spring-app:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-10T20:54:19.486924173Z
+    created: 2018-07-11T18:31:49.831667005Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
-    digest: 41066d668cb6251caac8ddca8ebf376ca77eeff163124d4b127996581ad8964e
+    digest: c55fea501e718efe4014a0593291fe7646fe49e472291d25e0241738bb82b028
     name: spring-app
     urls:
     - https://eli-skaronea.github.io/helm-charts/spring-app-1.0-latest.tgz
     version: 1.0-latest
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-10T20:54:19.485956166Z
+    created: 2018-07-11T18:31:49.829398846Z
+    description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
+      to kafka
+    digest: c3a6411b2f294854341ee278ea7b81409bba813da40a2af0a2eb518b2d19f0bf
+    name: spring-app
+    urls:
+    - https://eli-skaronea.github.io/helm-charts/spring-app-1.0-11.tgz
+    version: 1.0-11
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2018-07-11T18:31:49.829203152Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
     digest: 17fa10c523546f2396aad665459736b8c4daab83b70acb316e4f1afe3d0ef648
@@ -23,7 +33,7 @@ entries:
     version: 1.0-10
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-10T20:54:19.486711019Z
+    created: 2018-07-11T18:31:49.830255174Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
     digest: 93d2fb5c9dba267be1d63c059fa1f77746337ed9fc588097d0ff9d0bca2a087b
@@ -33,7 +43,7 @@ entries:
     version: 1.0-9
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-10T20:54:19.486524862Z
+    created: 2018-07-11T18:31:49.830069004Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
     digest: 7113be52c95ae9aaa5441d66cdd2ad992f45284a77244450a1e09ee1b40d4530
@@ -43,7 +53,7 @@ entries:
     version: 1.0-8
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-10T20:54:19.486347711Z
+    created: 2018-07-11T18:31:49.829847172Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
     digest: 5d4524775041c045b64f82587097d4f1f3e59ef71ffa3e45c8fc258c89ba7802
@@ -53,7 +63,7 @@ entries:
     version: 1.0-7
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-10T20:54:19.486171891Z
+    created: 2018-07-11T18:31:49.829649304Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
     digest: 9fcd701e201f66fc678fb1fb8cc770f7bfee0dabee4a8d58e102f0ca7ce97320
@@ -63,7 +73,7 @@ entries:
     version: 1.0-5
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-10T20:54:19.485771637Z
+    created: 2018-07-11T18:31:49.829003044Z
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
     digest: 804324f01de13656624e83067d17a9c0313c94e9ee0d72741442de7d89b129c2
@@ -71,4 +81,4 @@ entries:
     urls:
     - https://eli-skaronea.github.io/helm-charts/spring-app-0.1.0.tgz
     version: 0.1.0
-generated: 2018-07-10T20:54:19.485492563Z
+generated: 2018-07-11T18:31:49.828511098Z
