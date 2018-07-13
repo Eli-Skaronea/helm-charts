@@ -2,6 +2,7 @@
 	- minikube service list
 2. Append /greeting to end of URL to access endpoint.
 3. Append /greeting?name=<insert name here> to change greeting.
-4. Data interacts with kafka topic: greetings
-    - This can be seen with the command kubectl logs [this app's pod name] [-f]
+4. Data interacts with topic: greetings
+    - This can be seen with the command: 
+            kubectl logs [this app's pod name] [-f]
     - -f will stream the console of this application.
