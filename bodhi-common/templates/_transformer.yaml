@@ -1,0 +1,57 @@
+{{- define "bc.transformer.ports" }}
+- name: http
+  containerPort: 80
+  protocol: TCP
+{{- end -}}
+
+{{- define "bc.transformer.liveness" }}
+  tcpSocket:
+    port: 80
+  initialDelaySeconds: 30
+  timeoutSeconds: 15
+{{- end -}}
+
+{{- define "bc.transformer.readiness" }}
+  tcpSocket:
+    port: 80
+  initialDelaySeconds: 30
+  periodSeconds: 5
+{{- end -}}
+
+{{- define "bc.transformer.replicas" -}}
+$REPLICAS
+{{- end -}}
+
+{{- define "bc.transformer.env" }}
+- name: SPRING_CLOUD_CONFIG_LABEL
+  value: master
+- name: INFO_VERSION
+  value: master
+- name: JAVA_OPTS
+  value: -Xmx250m
+- name: SERVER_PORT
+  value: 0
+- name: SPRING_PROFILES_ACTIVE
+  value: ${BASE_ENV}, {{ .Values.env.SPRING_PROFILES_ACTIVE_EXTRA }}
+{{- end -}}
+
+{{- define "bc.transformer.affinity" }}
+  podAntiAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+    - labelSelector:
+        - matchExpressions:
+          - key: app
+            operator: In
+            values:
+            - reports-transformer
+      topologyKey: "kubernetes.io/hostname"
+{{- end -}}
+
+{{- define "bc.transformer.service.spec" }}
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: http
+      protocol: TCP
+      name: http
+{{- end -}}
