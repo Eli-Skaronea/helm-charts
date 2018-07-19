@@ -3,9 +3,9 @@ entries:
   bodhi-common:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-19T13:29:32.544898769-06:00
+    created: 2018-07-19T13:51:44.114168122-06:00
     description: A Helm chart for Kubernetes
-    digest: 71c7e193b09d9beb14f92a1b5561ed8719e720a18a0b897d0ab2ac1380d175d5
+    digest: 5f1f039f5972f0c3a724c89086df73425f3bb20d586625c926a5badc776f19b0
     name: bodhi-common
     urls:
     - bodhi-common-0.1.0.tgz
@@ -13,7 +13,7 @@ entries:
   spring-app:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-19T13:29:32.546808468-06:00
+    created: 2018-07-19T13:51:44.115680162-06:00
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
     digest: 012ddb416c28376c7eb90759ba4afb010be8270a036ca53ace312c976903189b
@@ -23,7 +23,7 @@ entries:
     version: 1.0-latest
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-19T13:29:32.545898086-06:00
+    created: 2018-07-19T13:51:44.114851186-06:00
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
     digest: 597796504210530eaf08bbf6ef53f94fee9ba0dfa6be9874f9e69d1084f0eec2
@@ -33,7 +33,7 @@ entries:
     version: 1.0-12
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-19T13:29:32.545720974-06:00
+    created: 2018-07-19T13:51:44.114683294-06:00
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
     digest: c3a6411b2f294854341ee278ea7b81409bba813da40a2af0a2eb518b2d19f0bf
@@ -43,7 +43,7 @@ entries:
     version: 1.0-11
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-19T13:29:32.545531696-06:00
+    created: 2018-07-19T13:51:44.114511967-06:00
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
     digest: 17fa10c523546f2396aad665459736b8c4daab83b70acb316e4f1afe3d0ef648
@@ -53,7 +53,7 @@ entries:
     version: 1.0-10
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-19T13:29:32.546628302-06:00
+    created: 2018-07-19T13:51:44.115510385-06:00
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
     digest: 93d2fb5c9dba267be1d63c059fa1f77746337ed9fc588097d0ff9d0bca2a087b
@@ -63,7 +63,7 @@ entries:
     version: 1.0-9
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-19T13:29:32.546445886-06:00
+    created: 2018-07-19T13:51:44.115341361-06:00
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
     digest: 7113be52c95ae9aaa5441d66cdd2ad992f45284a77244450a1e09ee1b40d4530
@@ -73,7 +73,7 @@ entries:
     version: 1.0-8
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-19T13:29:32.546266664-06:00
+    created: 2018-07-19T13:51:44.115176305-06:00
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
     digest: 5d4524775041c045b64f82587097d4f1f3e59ef71ffa3e45c8fc258c89ba7802
@@ -83,7 +83,7 @@ entries:
     version: 1.0-7
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-19T13:29:32.546087078-06:00
+    created: 2018-07-19T13:51:44.115015455-06:00
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
     digest: 9fcd701e201f66fc678fb1fb8cc770f7bfee0dabee4a8d58e102f0ca7ce97320
@@ -93,7 +93,7 @@ entries:
     version: 1.0-5
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2018-07-19T13:29:32.545337831-06:00
+    created: 2018-07-19T13:51:44.114340482-06:00
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
     digest: 804324f01de13656624e83067d17a9c0313c94e9ee0d72741442de7d89b129c2
@@ -101,4 +101,4 @@ entries:
     urls:
     - spring-app-0.1.0.tgz
     version: 0.1.0
-generated: 2018-07-19T13:29:32.544392271-06:00
+generated: 2018-07-19T13:51:44.113814587-06:00

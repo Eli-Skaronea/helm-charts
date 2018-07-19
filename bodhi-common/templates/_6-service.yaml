@@ -1,0 +1,8 @@
+{{- define "bc.6.service.spec" }}
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: http
+      protocol: TCP
+      name: http
+{{- end -}}
