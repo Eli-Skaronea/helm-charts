@@ -1,0 +1,44 @@
+{{- define "bc.ingest.ports" }}
+- name: http
+  containerPort: 80
+  protocol: TCP
+{{- end -}}
+
+{{- define "bc.ingest.liveness" }}
+  tcpSocket:
+    port: 80
+  initialDelaySeconds: 30
+  timeoutSeconds: 15
+{{- end -}}
+
+{{- define "bc.ingest.readiness" }}
+  tcpSocket:
+    port: 80
+  initialDelaySeconds: 30
+  periodSeconds: 5
+{{- end -}}
+
+{{- define "bc.ingest.replicas" -}}
+$REPLICAS
+{{- end -}}
+
+{{- define "bc.ingest.affinity" }}
+  podAntiAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+    - labelSelector:
+        - matchExpressions:
+          - key: app
+            operator: In
+            values:
+            - generic-ingest
+      topologyKey: "kubernetes.io/hostname"
+{{- end -}}
+
+{{- define "bc.ingest.service.spec" }}
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: http
+      protocol: TCP
+      name: http
+{{- end -}}
