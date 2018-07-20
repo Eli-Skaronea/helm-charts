@@ -1,28 +1,28 @@
-{{- define "bc.ingest.ports" }}
+{{- define "bc.default.ports" }}
 - name: http
   containerPort: 80
   protocol: TCP
 {{- end -}}
 
-{{- define "bc.ingest.liveness" }}
+{{- define "bc.default.liveness" }}
   tcpSocket:
     port: 80
   initialDelaySeconds: 30
   timeoutSeconds: 15
 {{- end -}}
 
-{{- define "bc.ingest.readiness" }}
+{{- define "bc.default.readiness" }}
   tcpSocket:
     port: 80
   initialDelaySeconds: 30
   periodSeconds: 5
 {{- end -}}
 
-{{- define "bc.ingest.replicas" -}}
+{{- define "bc.default.replicas" -}}
 $REPLICAS
 {{- end -}}
 
-{{- define "bc.ingest.affinity" }}
+{{- define "bc.default.affinity" }}
   podAntiAffinity:
     requiredDuringSchedulingIgnoredDuringExecution:
     - labelSelector:
@@ -30,15 +30,9 @@ $REPLICAS
           - key: app
             operator: In
             values:
-            - generic-ingest
+            - reports-
       topologyKey: "kubernetes.io/hostname"
 {{- end -}}
 
-{{- define "bc.ingest.service.spec" }}
-  type: ClusterIP
-  ports:
-    - port: 80
-      targetPort: http
-      protocol: TCP
-      name: http
-{{- end -}}
+
+#TODO: reports in podAntiAffinity

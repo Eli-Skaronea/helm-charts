@@ -1,0 +1,12 @@
+{{- define "bc.service.liveness" }}
+  exec:
+    command:
+    - "CMD"
+    - "/bin/sh"
+    - "-l"
+    - "-c"
+    - "/healthcheck.sh"
+  initialDelaySeconds: 30
+  periodSeconds: 30
+  timeoutSeconds: 15
+{{- end -}}
