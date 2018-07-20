@@ -3,11 +3,7 @@ entries:
   bodhi-common:
   - apiVersion: v1
     appVersion: "1.0"
-<<<<<<< HEAD
     created: 2018-07-20T13:41:51.970837078-06:00
-=======
-    created: 2018-07-20T19:32:41.313856026Z
->>>>>>> 4d9b00cd9fd3187c665cc0124699ad002491b257
     description: A Helm chart for Kubernetes
     digest: ea1caab47d5f4fe3deda2ddacafdd25eb9800b7f52598cc09ccf6ffdff29c948
     name: bodhi-common
@@ -16,64 +12,17 @@ entries:
     version: 1.0-latest
   - apiVersion: v1
     appVersion: "1.0"
-<<<<<<< HEAD
     created: 2018-07-20T13:41:51.970608634-06:00
-=======
-    created: 2018-07-20T19:32:41.313638184Z
-    description: A Helm chart for Kubernetes
-    digest: 6b5ed5e263dd8a706d2ecb637e461307d2286040eef9656ebed08c5923841c54
-    name: bodhi-common
-    urls:
-    - https://eli-skaronea.github.io/helm-charts/bodhi-common-1.0-4.tgz
-    version: 1.0-4
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2018-07-20T19:32:41.313419463Z
-    description: A Helm chart for Kubernetes
-    digest: 7f6429a29f68c9dd26e29126225aad41b2bce585ad1677f6243c2cde6735e03e
-    name: bodhi-common
-    urls:
-    - https://eli-skaronea.github.io/helm-charts/bodhi-common-1.0-3.tgz
-    version: 1.0-3
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2018-07-20T19:32:41.313203267Z
-    description: A Helm chart for Kubernetes
-    digest: d1105e4513b40b2916448485dd6805af245e65785dda34b0db96f851a39cca40
-    name: bodhi-common
-    urls:
-    - https://eli-skaronea.github.io/helm-charts/bodhi-common-1.0-2.tgz
-    version: 1.0-2
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2018-07-20T19:32:41.312958667Z
->>>>>>> 4d9b00cd9fd3187c665cc0124699ad002491b257
     description: A Helm chart for Kubernetes
     digest: 77496fc291a70ea5622546a705ecb952680dcd8844775c8711db12a3a1b6cfb0
     name: bodhi-common
     urls:
     - bodhi-common-1.0-1.tgz
     version: 1.0-1
-<<<<<<< HEAD
   spring-app:
   - apiVersion: v1
     appVersion: "1.0"
     created: 2018-07-20T13:41:51.9712217-06:00
-=======
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2018-07-20T19:32:41.312733449Z
-    description: A Helm chart for Kubernetes
-    digest: 159048385b0308d40f392cf0bdbca14c622f1e36e63a18fb3569a740ad7d363d
-    name: bodhi-common
-    urls:
-    - https://eli-skaronea.github.io/helm-charts/bodhi-common-0.1.0.tgz
-    version: 0.1.0
-  spring-app:
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2018-07-20T19:32:41.315503307Z
->>>>>>> 4d9b00cd9fd3187c665cc0124699ad002491b257
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
     digest: 012ddb416c28376c7eb90759ba4afb010be8270a036ca53ace312c976903189b
@@ -83,71 +32,7 @@ entries:
     version: 1.0-latest
   - apiVersion: v1
     appVersion: "1.0"
-<<<<<<< HEAD
     created: 2018-07-20T13:41:51.971011793-06:00
-=======
-    created: 2018-07-20T19:32:41.314527281Z
-    description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
-      to kafka
-    digest: 597796504210530eaf08bbf6ef53f94fee9ba0dfa6be9874f9e69d1084f0eec2
-    name: spring-app
-    urls:
-    - https://eli-skaronea.github.io/helm-charts/spring-app-1.0-12.tgz
-    version: 1.0-12
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2018-07-20T19:32:41.314359236Z
-    description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
-      to kafka
-    digest: c3a6411b2f294854341ee278ea7b81409bba813da40a2af0a2eb518b2d19f0bf
-    name: spring-app
-    urls:
-    - https://eli-skaronea.github.io/helm-charts/spring-app-1.0-11.tgz
-    version: 1.0-11
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2018-07-20T19:32:41.314194067Z
-    description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
-      to kafka
-    digest: 17fa10c523546f2396aad665459736b8c4daab83b70acb316e4f1afe3d0ef648
-    name: spring-app
-    urls:
-    - https://eli-skaronea.github.io/helm-charts/spring-app-1.0-10.tgz
-    version: 1.0-10
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2018-07-20T19:32:41.315312747Z
-    description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
-      to kafka
-    digest: 93d2fb5c9dba267be1d63c059fa1f77746337ed9fc588097d0ff9d0bca2a087b
-    name: spring-app
-    urls:
-    - https://eli-skaronea.github.io/helm-charts/spring-app-1.0-9.tgz
-    version: 1.0-9
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2018-07-20T19:32:41.315144057Z
-    description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
-      to kafka
-    digest: 7113be52c95ae9aaa5441d66cdd2ad992f45284a77244450a1e09ee1b40d4530
-    name: spring-app
-    urls:
-    - https://eli-skaronea.github.io/helm-charts/spring-app-1.0-8.tgz
-    version: 1.0-8
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2018-07-20T19:32:41.314974773Z
-    description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
-      to kafka
-    digest: 5d4524775041c045b64f82587097d4f1f3e59ef71ffa3e45c8fc258c89ba7802
-    name: spring-app
-    urls:
-    - https://eli-skaronea.github.io/helm-charts/spring-app-1.0-7.tgz
-    version: 1.0-7
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2018-07-20T19:32:41.314793809Z
->>>>>>> 4d9b00cd9fd3187c665cc0124699ad002491b257
     description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
       to kafka
     digest: 9fcd701e201f66fc678fb1fb8cc770f7bfee0dabee4a8d58e102f0ca7ce97320
@@ -155,18 +40,4 @@ entries:
     urls:
     - spring-app-1.0-5.tgz
     version: 1.0-5
-<<<<<<< HEAD
 generated: 2018-07-20T13:41:51.970255456-06:00
-=======
-  - apiVersion: v1
-    appVersion: "1.0"
-    created: 2018-07-20T19:32:41.314022205Z
-    description: A Helm chart for Kubernetes - creates a simple REST endpoint producer
-      to kafka
-    digest: 804324f01de13656624e83067d17a9c0313c94e9ee0d72741442de7d89b129c2
-    name: spring-app
-    urls:
-    - https://eli-skaronea.github.io/helm-charts/spring-app-0.1.0.tgz
-    version: 0.1.0
-generated: 2018-07-20T19:32:41.312415604Z
->>>>>>> 4d9b00cd9fd3187c665cc0124699ad002491b257
