@@ -1,4 +1,4 @@
-{{- define "bc.default.service.spec" -}}
+{{- define "bc.default.service.spec" }}
 type: ClusterIP
   ports:
     - port: 80
