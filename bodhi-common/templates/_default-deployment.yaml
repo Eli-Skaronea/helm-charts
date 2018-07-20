@@ -19,7 +19,7 @@
 {{- end -}}
 
 {{- define "bc.default.replicas" -}}
-$REPLICAS
+${REPLICAS}
 {{- end -}}
 
 {{- define "bc.default.affinity" }}
