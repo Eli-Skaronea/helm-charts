@@ -8,9 +8,9 @@ spec:
       paths:
       - path: /greeting
         backend:
-          serviceName: consumer-spring-app
-          servicePort: 9000
+          serviceName: producer-spring-app
+          servicePort: 80
       - path: /other
         backend:
           serviceName: producer-spring-app
-          servicePort: 9080
+          servicePort: 80
