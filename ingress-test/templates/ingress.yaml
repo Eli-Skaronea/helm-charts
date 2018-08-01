@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: my-ingress
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /greeting
+        backend:
+          serviceName: consumer-spring-app
+          servicePort: 9000
+      - path: /other
+        backend:
+          serviceName: producer-spring-app
+          servicePort: 9080

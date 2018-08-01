@@ -7,7 +7,5 @@ spec:
     - port: {{ .Values.service.port }}
   selector:
     app: {{ template "spring-chart.name" . }}
-  type: LoadBalancer
-status:
-  loadBalancer: {}
----
+  type: ClusterIP
+
