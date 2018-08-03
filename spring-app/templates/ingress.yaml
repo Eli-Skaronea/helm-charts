@@ -11,8 +11,8 @@ spec:
         - path: /goodbye
           backend:
             serviceName: producer-spring-app
-            servicePort: 80
+            servicePort: 9080
         - path: /greeting
           backend:
             serviceName: consumer-spring-app
-            servicePort: 80
+            servicePort: 9000
