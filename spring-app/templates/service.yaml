@@ -4,7 +4,7 @@ metadata:
   name: {{ template "spring-chart.fullname" . }}
 spec:
   ports:
-    - port: {{ .Values.service.port }}
+    - port: 80
       targetPort: http
   selector:
     app: {{ template "spring-chart.name" . }}
