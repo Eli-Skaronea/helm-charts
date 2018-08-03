@@ -4,8 +4,7 @@ metadata:
   name: {{ template "spring-chart.fullname" . }}
 spec:
   ports:
-    - port: 80
-      targetPort: http
+    - port: {{ .Values.service.port }}
   selector:
     app: {{ template "spring-chart.name" . }}
   type: ClusterIP
