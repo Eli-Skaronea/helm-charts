@@ -6,11 +6,12 @@ spec:
   rules:
   - http:
       paths:
+      - path: /goodbye
+        backend:
+          serviceName: producer-spring-app
+          servicePort: 9000
       - path: /greeting
         backend:
-          serviceName: producer-spring-app
-          servicePort: 80
-      - path: /other
-        backend:
-          serviceName: producer-spring-app
-          servicePort: 80
+          serviceName: consumer-spring-app
+          servicePort: 9080
+
